@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Chatbot</title>
 </head>
+
 <body>
     <nav class="navigation">
         <ul>
@@ -17,5 +19,17 @@
         </ul>
         <img src="css/schoolLogo.png" alt="School Logo" class="school-photo">
     </nav>
+    <div id="chatbot-container">
+        <div id="chatbot-content">
+            <h1>Welkom bij onze Chatbot!</h1>
+            <p>Hoe kan ik u vandaag helpen?</p>
+            <input type="text" id="user-input" placeholder="Typ hier uw bericht...">
+            <button id="send-button">Verzenden</button>
+            <div id="chat-history">
+                <!-- Chatgeschiedenis wordt hier weergegeven -->
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -163,6 +163,17 @@ body {
 }
 
 .page-links:hover {
+    text-decoration: none;
     color: #dbff4a;
     /* Voeg onderstreping toe bij hover */
 }
+
+.inschrijf-info a {
+    color: #006445;
+    text-decoration: none;
+}
+
+.inschrijf-info a:hover {
+    color: #dbff4a;
+}
+
