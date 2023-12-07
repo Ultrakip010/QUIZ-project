@@ -1,0 +1,178 @@
+/* Global styling */
+body {
+    background-color: #006445;
+    font-family: 'Barlow', sans-serif;
+    /* Add Barlow font */
+}
+
+/* Navigation styling */
+.navigation {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    /* BEGIN: Add flex display */
+    justify-content: space-between;
+    /* BEGIN: Spread links across the width */
+    color: #006445;
+    /* Add color that matches the background-color */
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navigation a {
+    display: flex;
+    text-decoration: none;
+    color: #dbff4a;
+    /* Set the link color to #dbff4a */
+    padding: 5px;
+}
+
+.navigation a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* School photo styling */
+.school-photo {
+    width: 200px;
+    height: 75px;
+    margin-left: 5px;
+    /* Adjust the margin-left to move the photo slightly to the left */
+    position: absolute;
+    top: 0;
+    /* Adjust the top position to move the photo higher */
+    right: 10px;
+    z-index: 1;
+    /* Add z-index to make sure the photo is on top of the navigation */
+}
+
+.inschrijf-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    /* Decrease the width of the box shadow */
+    display: flex;
+    flex-direction: column;
+    /* Display the content in a column */
+    align-items: center;
+    /* Vertically center the content */
+    max-width: 800px;
+    /* Set a wider maximum width for the element */
+    margin-left: auto;
+    /* Center the element horizontally */
+    margin-right: auto;
+    /* Center the element horizontally */
+}
+
+.inschrijf-info h2 {
+    color: #006445;
+    margin-bottom: 10px;
+}
+
+.inschrijf-info p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background-color: #dbff4a;
+    /* Set the background color to #dbff4a */
+}
+
+.quiz-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    /* Decrease the width of the box shadow */
+    display: flex;
+    flex-direction: column;
+    /* Display the content in a column */
+    align-items: center;
+    /* Vertically center the content */
+    max-width: 800px;
+    /* Set a wider maximum width for the element */
+    margin-left: auto;
+    /* Center the element horizontally */
+    margin-right: auto;
+    /* Center the element horizontally */
+    color: #006445;
+    /* Set the text color to match the background-color */
+}
+
+.quiz-container h2 {
+    color: #dbff4a;
+    /* Set the title color to #dbff4a */
+}
+
+.quiz-container .question {
+    color: #333;
+    /* Set the question color to #333 */
+}
+
+.quiz-container .options li {
+    color: #006445;
+    /* Set the answer color to #006445 */
+}
+
+.content {
+    margin-top: 20px;
+    /* Add margin to create space between the content and the header */
+}
+
+.page-links {
+    color: #006445;
+    /* Set the link color to #006445 */
+    text-decoration: none;
+    /* Remove the underline from the links */
+    margin-right: 10px;
+    /* Add margin to create space between the links */
+}
+
+.page-links:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+/* Additional styling */
+.content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.page-links {
+    font-weight: bold;
+}
+
+.page-links:hover {
+    color: #dbff4a;
+}
