@@ -1,20 +1,20 @@
-/* Global styling */
+/* Globale stijl */
 body {
     background-color: #006445;
     font-family: 'Barlow', sans-serif;
-    /* Add Barlow font */
+    /* Voeg het Barlow-lettertype toe */
 }
 
-/* Navigation styling */
+/* Navigatiestijl */
 .navigation {
     background-color: #f2f2f2;
     padding: 10px;
     display: flex;
-    /* BEGIN: Add flex display */
+    /* BEGIN: Voeg flex display toe */
     justify-content: space-between;
-    /* BEGIN: Spread links across the width */
+    /* BEGIN: Verspreid links over de breedte */
     color: #006445;
-    /* Add color that matches the background-color */
+    /* Voeg kleur toe die overeenkomt met de achtergrondkleur */
 }
 
 .navigation ul {
@@ -33,7 +33,7 @@ body {
     display: flex;
     text-decoration: none;
     color: #dbff4a;
-    /* Set the link color to #dbff4a */
+    /* Stel de linkkleur in op #dbff4a */
     padding: 5px;
 }
 
@@ -42,18 +42,18 @@ body {
     color: #fff;
 }
 
-/* School photo styling */
+/* Stijl voor schoolfoto */
 .school-photo {
     width: 200px;
     height: 75px;
     margin-left: 5px;
-    /* Adjust the margin-left to move the photo slightly to the left */
+    /* Pas de margin-left aan om de foto iets naar links te verplaatsen */
     position: absolute;
     top: 0;
-    /* Adjust the top position to move the photo higher */
+    /* Pas de bovenste positie aan om de foto hoger te verplaatsen */
     right: 10px;
     z-index: 1;
-    /* Add z-index to make sure the photo is on top of the navigation */
+    /* Voeg z-index toe om ervoor te zorgen dat de foto bovenop de navigatie staat */
 }
 
 .inschrijf-info {
@@ -62,18 +62,19 @@ body {
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    /* Decrease the width of the box shadow */
+    /* Verklein de breedte van de box shadow */
     display: flex;
     flex-direction: column;
-    /* Display the content in a column */
+    /* Toon de inhoud in een kolom */
     align-items: center;
-    /* Vertically center the content */
+    /* Centreer de inhoud verticaal */
     max-width: 800px;
-    /* Set a wider maximum width for the element */
+    /* Stel een bredere maximale breedte in voor het element */
     margin-left: auto;
-    /* Center the element horizontally */
     margin-right: auto;
-    /* Center the element horizontally */
+    /* Centreer het element horizontaal */
+    margin-right: auto;
+    /* Centreer het element horizontaal */
 }
 
 .inschrijf-info h2 {
@@ -102,7 +103,7 @@ body {
 .submit-btn {
     margin-top: 20px;
     background-color: #dbff4a;
-    /* Set the background color to #dbff4a */
+    /* Stel de achtergrondkleur in op #dbff4a */
 }
 
 .quiz-container {
@@ -111,68 +112,57 @@ body {
     margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    /* Decrease the width of the box shadow */
+    /* Verklein de breedte van de box shadow */
     display: flex;
     flex-direction: column;
-    /* Display the content in a column */
+    /* Toon de inhoud in een kolom */
     align-items: center;
-    /* Vertically center the content */
+    /* Centreer de inhoud verticaal */
     max-width: 800px;
-    /* Set a wider maximum width for the element */
+    /* Stel een bredere maximale breedte in voor het element */
     margin-left: auto;
-    /* Center the element horizontally */
+    /* Centreer het element horizontaal */
     margin-right: auto;
-    /* Center the element horizontally */
+    /* Centreer het element horizontaal */
     color: #006445;
-    /* Set the text color to match the background-color */
+    /* Stel de tekstkleur in op de achtergrondkleur */
 }
 
 .quiz-container h2 {
     color: #dbff4a;
-    /* Set the title color to #dbff4a */
+    /* Stel de kleur van de titel in op #dbff4a */
 }
 
 .quiz-container .question {
     color: #333;
-    /* Set the question color to #333 */
+    /* Stel de kleur van de vraag in op #333 */
 }
 
 .quiz-container .options li {
     color: #006445;
-    /* Set the answer color to #006445 */
 }
 
-.content {
-    margin-top: 20px;
-    /* Add margin to create space between the content and the header */
-}
-
-.page-links {
-    color: #006445;
-    /* Set the link color to #006445 */
-    text-decoration: none;
-    /* Remove the underline from the links */
-    margin-right: 10px;
-    /* Add margin to create space between the links */
-}
-
-.page-links:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
-}
-
-/* Additional styling */
+/* Aanvullende stijl */
 .content {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* Voeg marge toe om ruimte te creëren tussen de inhoud en de header */
 }
 
 .page-links {
+    color: #006445;
+    /* Stel de linkkleur in op #006445 */
+    text-decoration: none;
+    /* Verwijder de onderstreping van de links */
+    margin-right: 10px;
+    /* Voeg marge toe om ruimte te creëren tussen de links */
     font-weight: bold;
 }
 
 .page-links:hover {
     color: #dbff4a;
+    /* Voeg onderstreping toe bij hover */
 }
