@@ -7,13 +7,14 @@ body {
 
 /* Navigatiestijl */
 .navigation {
-    background-color: #f2f2f2;
+    background-color: #004d34;
+    /* Change the background color to a slightly darker green */
     padding: 10px;
     display: flex;
     /* BEGIN: Voeg flex display toe */
     justify-content: space-between;
     /* BEGIN: Verspreid links over de breedte */
-    color: #006445;
+    color: #fff;
     /* Voeg kleur toe die overeenkomt met de achtergrondkleur */
 }
 
@@ -57,7 +58,8 @@ body {
 }
 
 .inschrijf-info {
-    background-color: #f2f2f2;
+    background-color: #004d34;
+    /* Change the background color to a slightly darker green */
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -78,12 +80,12 @@ body {
 }
 
 .inschrijf-info h2 {
-    color: #006445;
+    color: #f2f2f2;
     margin-bottom: 10px;
 }
 
 .inschrijf-info p {
-    color: #333;
+    color: #fff;
     line-height: 1.5;
 }
 
@@ -107,7 +109,7 @@ body {
 }
 
 .quiz-container {
-    background-color: #f2f2f2;
+    background-color: #004d34;
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -128,33 +130,40 @@ body {
     /* Stel de tekstkleur in op de achtergrondkleur */
 }
 
+.quiz-container h1 {
+    color: #dbff4a;
+    /* Stel de kleur van de titel in op #dbff4a */
+}
 .quiz-container h2 {
     color: #dbff4a;
     /* Stel de kleur van de titel in op #dbff4a */
 }
 
 .quiz-container .question {
-    color: #333;
+    color: #dbff4a;
     /* Stel de kleur van de vraag in op #333 */
 }
 
 .quiz-container .options li {
-    color: #006445;
+    color: #16b180;
 }
 
 /* Aanvullende stijl */
 .content {
-    background-color: #f2f2f2;
+    background-color: #004d34;
+    /* Update de achtergrondkleur naar #a3ff8a (minder fel groen) */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     /* Voeg marge toe om ruimte te creëren tussen de inhoud en de header */
+    color: #fff;
+    /* Stel de tekstkleur in op wit */
 }
 
 .page-links {
-    color: #006445;
-    /* Stel de linkkleur in op #006445 */
+    color: #dbff4a;
+    /* Stel de linkkleur in op #dbff4a */
     text-decoration: none;
     /* Verwijder de onderstreping van de links */
     margin-right: 10px;
@@ -163,14 +172,14 @@ body {
 }
 
 .page-links:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #dbff4a;
     /* Voeg onderstreping toe bij hover */
 }
 .inschrijf-info a {
-    color: #006445;
+    color: #dbff4a;
     text-decoration: none;
 }
 .inschrijf-info a:hover {
-    color: #dbff4a;
+    color: #18c991;
 }
