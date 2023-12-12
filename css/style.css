@@ -183,3 +183,14 @@ body {
 .inschrijf-info a:hover {
     color: #18c991;
 }
+
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dbff4a;
+    /* Set the color of the countdown text to #dbff4a */
+    margin-bottom: 10px;
+    /* Add some spacing below the countdown */
+    text-align: center;
+    /* Center the countdown text */
+}
