@@ -30,6 +30,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("send-button").addEventListener("click", function() {
+            var userInput = document.getElementById("user-input").value;
+            if (userInput === "quiz") {
+                window.location.href = "quiz.html";
+            } else if (userInput === "home") {
+                window.location.href = "home.html";
+            } else { // Als de gebruiker iets anders typt dan "quiz" of "home"
+                var chatHistory = document.getElementById("chat-history");
+                var chatHistoryContent = chatHistory.innerHTML;
+                chatHistory.innerHTML = chatHistoryContent + "<p class='user-message'>" + userInput + "</p>";
+                document.getElementById("user-input").value = "";
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+                
+            }
+        });
+    </script>
 </body>
 
 </html>
