@@ -194,3 +194,16 @@ body {
     text-align: center;
     /* Center the countdown text */
 }
+
+.countdown-text{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #18c991;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: -20rem;
+    margin-top: -2.6rem;
+}
