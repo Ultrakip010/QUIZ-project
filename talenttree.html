@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .talent-node {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .talent-node.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
     <title>Talenttree</title>
 </head>
 
@@ -53,6 +65,16 @@
         </div>
     </div>
     <script src="JS/talenttree.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const talentNodes = document.querySelectorAll('.talent-node');
+            talentNodes.forEach((node, index) => {
+                setTimeout(() => {
+                    node.classList.add('animate');
+                }, index * 200);
+            });
+        });
+    </script>
 </body>
 
 </html>
