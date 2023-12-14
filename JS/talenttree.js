@@ -17,3 +17,11 @@ talentNodes.forEach((node, index) => {
         }
     });
 });
+window.addEventListener('DOMContentLoaded', () => {
+    const talentNodes = document.querySelectorAll('.talent-node');
+    talentNodes.forEach((node, index) => {
+        setTimeout(() => {
+            node.classList.add('animate');
+        }, index * 200);
+    });
+});
