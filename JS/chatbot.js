@@ -1,9 +1,9 @@
-/* document.getElementById("send-button").addEventListener("click", function() {
+ /* document.getElementById("send-button").addEventListener("click", function() {
     sendMessage();
 }); */
 
  document.getElementById("user-input").addEventListener("keypress", function(event) {
-    if (event.keyCode === 13) {
+    if (event.key === "Enter") {
         sendMessage();
     }
 }); 
@@ -22,6 +22,9 @@ function sendMessage() {
         window.location.href = "chatbot.html";
     } else if (userInput === "help") {
         document.getElementById("chat-history").innerHTML = "<p class='bot-message'>U kunt de volgende commando's gebruiken: <br> - quiz <br> - home <br> - inschrijven <br> - talenttree <br> - chatbot</p>";
+    } else if (userInput === "is ben gay?") {
+        document.getElementById("chat-history").innerHTML = "<p class='bot-message'>Ja hij is heel erg gay</p>";
+    
         
         // Als de gebruiker iets anders typt dan "quiz" of "home"
         var chatHistory = document.getElementById("chat-history");
