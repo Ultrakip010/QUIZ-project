@@ -89,63 +89,64 @@ body {
     line-height: 1.5;
 }
 
-.question {
-    margin-bottom: 20px;
+#question-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f2f2f2; /* Update background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Add text-align center */
 }
 
-.options {
-    list-style-type: none;
-    padding: 0;
-}
 
-.options li {
+
+#question {
     margin-bottom: 10px;
 }
 
-.submit-btn {
-    margin-top: 20px;
-    background-color: #dbff4a;
-    /* Stel de achtergrondkleur in op #dbff4a */
-}
-
-.quiz-container {
-    background-color: #004d34;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    /* Verklein de breedte van de box shadow */
+#options {
     display: flex;
     flex-direction: column;
-    /* Toon de inhoud in een kolom */
-    align-items: center;
-    /* Centreer de inhoud verticaal */
-    max-width: 800px;
-    /* Stel een bredere maximale breedte in voor het element */
-    margin-left: auto;
-    /* Centreer het element horizontaal */
-    margin-right: auto;
-    /* Centreer het element horizontaal */
-    color: #006445;
-    /* Stel de tekstkleur in op de achtergrondkleur */
 }
 
-.quiz-container h1 {
-    color: #dbff4a;
-    /* Stel de kleur van de titel in op #dbff4a */
-}
-.quiz-container h2 {
-    color: #dbff4a;
-    /* Stel de kleur van de titel in op #dbff4a */
+#options button {
+    margin-bottom: 10px;
 }
 
-.quiz-container .question {
-    color: #dbff4a;
-    /* Stel de kleur van de vraag in op #333 */
+#next-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #333; /* Update background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.quiz-container .options li {
-    color: #16b180;
+#score {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result-page {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f2f2f2; /* Update background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#result-page h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#result-score {
+    text-align: center;
 }
 
 /* Aanvullende stijl */

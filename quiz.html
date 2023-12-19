@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
+            h1 {
+                text-align: center;
+                margin-top: 20px;
             }
-            to {
-                opacity: 1;
-            }
-        }
 
-        @keyframes slideIn {
-            from {
-                transform: translateY(-100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        /* Quiz Container */
-        .quiz-container {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        /* Questions */
-        .question {
-            animation: slideIn 0.7s ease-in-out;
-        }
+            
+    </style>
+        
     </style>
     <title>Quiz</title>
 </head>
+
 <body>
     <nav class="navigation">
         <ul>
@@ -48,63 +30,20 @@
         <img src="css/schoolLogo.png" alt="School Logo" class="school-photo">
     </nav>
 
-    <article>
-        <div class="quiz-container">
-            <h1>Software Onderwijs Quiz</h1>
-            <form id="quiz-form">
-                <div class="question">
-                    <p>Vraag 1: Wat is de meest populaire programmeertaal?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q1" value="a"> A. JavaScript</li>
-                        <li><input type="radio" name="q1" value="b"> B. Python</li>
-                        <li><input type="radio" name="q1" value="c"> C. Java</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <p>Vraag 2: Wat is het doel van HTML?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q2" value="a"> A. De structuur van een webpagina definiëren</li>
-                        <li><input type="radio" name="q2" value="b"> B. Een webpagina stylen</li>
-                        <li><input type="radio" name="q2" value="c"> C. Interactiviteit toevoegen aan een webpagina</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <p>Vraag 3: Wat is de rol van een database in softwareontwikkeling?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q3" value="a"> A. Data opslaan en beheren</li>
-                        <li><input type="radio" name="q3" value="b"> B. Gebruikersinterfaces creëren</li>
-                        <li><input type="radio" name="q3" value="c"> C. Server-side logica afhandelen</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <p>Vraag 4: Wat is het doel van CSS?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q4" value="a"> A. De structuur van een webpagina definiëren</li>
-                        <li><input type="radio" name="q4" value="b"> B. Een webpagina stylen</li>
-                        <li><input type="radio" name="q4" value="c"> C. Interactiviteit toevoegen aan een webpagina</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <p>Vraag 5: Wat is de rol van versiebeheersystemen in softwareontwikkeling?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q5" value="a"> A. Wijzigingen in code bijhouden en samenwerken met anderen</li>
-                        <li><input type="radio" name="q5" value="b"> B. Software testen en debuggen</li>
-                        <li><input type="radio" name="q5" value="c"> C. Software implementeren op productieservers</li>
-                    </ul>
-                </div>
-                <div class="question">
-                    <p>Vraag 6: Wat is de betekenis van API?</p>
-                    <ul class="options">
-                        <li><input type="radio" name="q6" value="a"> A. Application Programming Interface</li>
-                        <li><input type="radio" name="q6" value="b"> B. Advanced Programming Interface</li>
-                        <li><input type="radio" name="q6" value="c"> C. Automated Programming Interface</li>
-                    </ul>
-                </div>
-                <button type="submit" class="submit-btn">Verzenden</button>
-            </form>
-        </div>
-    </article>
+    <h1>Quiz</h1>
+    <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button id="next-btn">Next</button>
+        <div id="score"></div>
+    </div>
 
-    <script src="/js/quiz.JS"></script>
+    <div id="result-page">
+        <h2>Quiz Completed!</h2>
+        <p id="result-score"></p>
+    </div>
+
+    <script src="JS/quiz.JS"></script>
 </body>
+
 </html>

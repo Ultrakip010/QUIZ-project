@@ -1,26 +1,26 @@
-// Set the date and time for the countdown
-var countdownDate = new Date("January 26, 2024 15:00:00").getTime();
+// Stel de datum en tijd in voor de aftelling
+var countdownDate = new Date("26 januari 2024 15:00:00").getTime();
 
-// Update the countdown every 1 second
+// Werk de aftelling elke 1 seconde bij
 var countdown = setInterval(function() {
-    // Get the current date and time
+    // Haal de huidige datum en tijd op
     var now = new Date().getTime();
 
-    // Calculate the remaining time
+    // Bereken de resterende tijd
     var distance = countdownDate - now;
 
-    // Calculate days, hours, minutes, and seconds
+    // Bereken dagen, uren, minuten en seconden
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the countdown
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    // Toon de aftelling
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "u " + minutes + "m " + seconds + "s ";
 
-    // If the countdown is finished, display a message
+    // Als de aftelling is afgelopen, toon een bericht
     if (distance < 0) {
         clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "Countdown has ended!";
+        document.getElementById("countdown").innerHTML = "Aftelling is afgelopen!";
     }
 }, 1000);

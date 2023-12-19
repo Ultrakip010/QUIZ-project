@@ -1,47 +1,93 @@
-const quizForm = document.getElementById('quiz-form');
-const submitButton = document.getElementById('submit-button');
+const questions = [
+    {
+        question: "What is software development?",
+        options: ["A process of creating software", "A process of creating hardware", "A process of designing websites"],
+        correctAnswer: "A process of creating software"
+    },
+    {
+        question: "What is the role of a software developer?",
+        options: ["Writing code", "Testing software", "Both"],
+        correctAnswer: "Both"
+    },
+    {
+        question: "What is version control?",
+        options: ["A system for managing software development", "A programming language", "A software testing technique"],
+        correctAnswer: "A system for managing software development"
+    },
+    {
+        question: "What is an algorithm?",
+        options: ["A step-by-step procedure for solving a problem", "A type of programming language", "A software development framework"],
+        correctAnswer: "A step-by-step procedure for solving a problem"
+    },
+    {
+        question: "What is debugging?",
+        options: ["The process of finding and fixing errors in code", "The process of optimizing code for performance", "The process of documenting code"],
+        correctAnswer: "The process of finding and fixing errors in code"
+    }
+];
 
-quizForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    let score = 0;
+let currentQuestion = 0;
+let score = 0;
 
-    // Check answers
-    const answers = {
-        q1: 'a',
-        q2: 'a',
-        q3: 'a',
-        q4: 'b',
-        q5: 'a',
-        q6: 'a'
-    };
+function displayQuestion() {
+    const questionContainer = document.getElementById("question-container");
+    const questionElement = document.getElementById("question");
+    const optionsElement = document.getElementById("options");
+    const nextButton = document.getElementById("next-btn");
 
-    const selectedOptions = Array.from(quizForm.elements).filter(element => element.type === 'radio' && element.checked);
-    selectedOptions.forEach(option => {
-        const questionName = option.name;
-        const selectedAnswer = option.value;
-        if (selectedAnswer === answers[questionName]) {
-            score++;
-            option.parentElement.classList.add('correct');
-        } else {
-            option.parentElement.classList.add('incorrect');
-            const correctAnswer = document.createElement('span');
-            correctAnswer.textContent = `Correct answer: ${answers[questionName]}`;
-            option.parentElement.appendChild(correctAnswer);
-        }
+    const question = questions[currentQuestion];
+
+    questionElement.textContent = question.question;
+
+    optionsElement.innerHTML = "";
+
+    question.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", () => checkAnswer(option));
+        optionsElement.appendChild(button);
     });
 
-    // Disable radio buttons
-    const radioButtons = Array.from(quizForm.elements).filter(element => element.type === 'radio');
-    radioButtons.forEach(button => {
-        button.disabled = true;
-    });
+    nextButton.style.display = "none";
+}
 
-    // Display score
-    const scoreContainer = document.createElement('div');
-    scoreContainer.textContent = `Score: ${score}/${Object.keys(answers).length}`;
-    quizForm.appendChild(scoreContainer);
-});
+function checkAnswer(answer) {
+    const question = questions[currentQuestion];
+    const nextButton = document.getElementById("next-btn");
+    const optionsElement = document.getElementById("options");
 
-submitButton.addEventListener('click', function () {
-    quizForm.submit();
-})
+    if (answer === question.correctAnswer) {
+        optionsElement.innerHTML = "Correct answer!";
+        optionsElement.style.color = "green";
+        score++;
+    } else {
+        optionsElement.innerHTML = `Wrong answer. The correct answer is: ${question.correctAnswer}`;
+        optionsElement.style.color = "red";
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        nextButton.style.display = "block";
+    } else {
+        const scoreElement = document.getElementById("score");
+        scoreElement.textContent = `Good job! Your score is ${score}/${questions.length}`;
+        nextButton.style.display = "none";
+        showResultPage();
+    }
+}
+
+function showResultPage() {
+    const questionContainer = document.getElementById("question-container");
+    const resultPage = document.getElementById("result-page");
+    const resultScoreElement = document.getElementById("result-score");
+
+    questionContainer.style.display = "none";
+    resultPage.style.display = "block";
+    resultScoreElement.textContent = `Your final score is ${score}/${questions.length}`;
+}
+
+const nextButton = document.getElementById("next-btn");
+nextButton.addEventListener("click", displayQuestion);
+
+displayQuestion();
