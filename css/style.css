@@ -176,6 +176,14 @@ body {
     color: #dbff4a;
     /* Voeg onderstreping toe bij hover */
 }
+
+.page-links ul li a{
+    color: #000000;
+}
+
+.page-links ul li a:hover{
+    color: #dbff4a;
+}
 .inschrijf-info a {
     color: #dbff4a;
     text-decoration: none;
@@ -206,4 +214,8 @@ body {
     text-align: center;
     margin-left: -20rem;
     margin-top: -2.6rem;
+}
+
+.locatie{
+    margin-left: 10rem;
 }

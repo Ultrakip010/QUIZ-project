@@ -42,3 +42,6 @@ quizForm.addEventListener('submit', function (event) {
     quizForm.appendChild(scoreContainer);
 });
 
+submitButton.addEventListener('click', function () {
+    quizForm.submit();
+})
