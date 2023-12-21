@@ -1,28 +1,28 @@
 const questions = [
     {
-        question: "What is software development?",
-        options: ["A process of creating software", "A process of creating hardware", "A process of designing websites"],
-        correctAnswer: "A process of creating software"
+        question: "Wat is softwareontwikkeling?",
+        options: ["Een proces van het creëren van software", "Een proces van het creëren van hardware", "Een proces van het ontwerpen van websites"],
+        correctAnswer: "Een proces van het creëren van software"
     },
     {
-        question: "What is the role of a software developer?",
-        options: ["Writing code", "Testing software", "Both"],
-        correctAnswer: "Both"
+        question: "Wat is de rol van een softwareontwikkelaar?",
+        options: ["Code schrijven", "Software testen", "Beide"],
+        correctAnswer: "Beide"
     },
     {
-        question: "What is version control?",
-        options: ["A system for managing software development", "A programming language", "A software testing technique"],
-        correctAnswer: "A system for managing software development"
+        question: "Wat is versiebeheer?",
+        options: ["Een systeem voor het beheren van softwareontwikkeling", "Een programmeertaal", "Een softwaretesttechniek"],
+        correctAnswer: "Een systeem voor het beheren van softwareontwikkeling"
     },
     {
-        question: "What is an algorithm?",
-        options: ["A step-by-step procedure for solving a problem", "A type of programming language", "A software development framework"],
-        correctAnswer: "A step-by-step procedure for solving a problem"
+        question: "Wat is een algoritme?",
+        options: ["Een stapsgewijze procedure voor het oplossen van een probleem", "Een type programmeertaal", "Een softwareontwikkelingsframework"],
+        correctAnswer: "Een stapsgewijze procedure voor het oplossen van een probleem"
     },
     {
-        question: "What is debugging?",
-        options: ["The process of finding and fixing errors in code", "The process of optimizing code for performance", "The process of documenting code"],
-        correctAnswer: "The process of finding and fixing errors in code"
+        question: "Wat is debuggen?",
+        options: ["Het proces van het vinden en oplossen van fouten in code", "Het proces van het optimaliseren van code voor prestaties", "Het proces van het documenteren van code"],
+        correctAnswer: "Het proces van het vinden en oplossen van fouten in code"
     }
 ];
 
