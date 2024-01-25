@@ -57,11 +57,11 @@ function checkAnswer(answer) {
     const optionsElement = document.getElementById("options");
 
     if (answer === question.correctAnswer) {
-        optionsElement.innerHTML = "Correct answer!";
+        optionsElement.innerHTML = "Correct antwoord!";
         optionsElement.style.color = "green";
         score++;
     } else {
-        optionsElement.innerHTML = `Wrong answer. The correct answer is: ${question.correctAnswer}`;
+        optionsElement.innerHTML = `Fout antwoord. Het correcte antwoord is: ${question.correctAnswer}`;
         optionsElement.style.color = "red";
     }
 
@@ -71,7 +71,7 @@ function checkAnswer(answer) {
         nextButton.style.display = "block";
     } else {
         const scoreElement = document.getElementById("score");
-        scoreElement.textContent = `Good job! Your score is ${score}/${questions.length}`;
+        scoreElement.textContent = `Goed gedaan! Je score is ${score}/${questions.length}`;
         nextButton.style.display = "none";
         showResultPage();
     }
@@ -84,7 +84,7 @@ function showResultPage() {
 
     questionContainer.style.display = "none";
     resultPage.style.display = "block";
-    resultScoreElement.textContent = `Your final score is ${score}/${questions.length}`;
+    resultScoreElement.textContent = `Je eindscore is ${score}/${questions.length}`;
 }
 
 const nextButton = document.getElementById("next-btn");
