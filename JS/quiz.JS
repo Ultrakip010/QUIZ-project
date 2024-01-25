@@ -58,7 +58,7 @@ function checkAnswer(answer) {
 
     if (answer === question.correctAnswer) {
         optionsElement.innerHTML = "Correct antwoord!";
-        optionsElement.style.color = "green";
+        optionsElement.style.color = "lightgreen";
         score++;
     } else {
         optionsElement.innerHTML = `Fout antwoord. Het correcte antwoord is: ${question.correctAnswer}`;

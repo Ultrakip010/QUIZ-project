@@ -1,3 +1,4 @@
+// ontleent van w3schools.com
 // Stel de datum en tijd in voor de aftelling
 var countdownDate2 = new Date("1 may 2024 00:00:00").getTime();
 

@@ -99,8 +99,6 @@ body {
     text-align: center; /* Add text-align center */
 }
 
-
-
 #question {
     margin-bottom: 10px;
 }
@@ -224,9 +222,11 @@ body {
     margin-left: 10rem;
 }
 .talent-node {
-    border: 3px solid black;
+    border: 9px solid #18c991;
     margin-top: 20px;
     width: 40vw;
+    border-radius: 30%;
+    background-color: #dbff4a;
 }
 
 .bot-link{
@@ -313,4 +313,47 @@ body {
 #laser {
     position: absolute;
     transition: all 0.1s ease;
+}
+
+.talenttalent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.talent-tree{
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+}
+
+.talent-button{
+    margin-bottom: 5px;
+}
+
+.talent-button:hover{
+    background-color: #18c991;
+    color: #dbff4a;
+}
+
+.countdown{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.navigation img{
+    margin-top: 5px;
+}
+
+.navigation{
+    margin-top: 1rem;
+}
+
+#question-container{
+    background-color: #127254;
+}
+
+#result-page{
+    background-color: #127254;
 }
